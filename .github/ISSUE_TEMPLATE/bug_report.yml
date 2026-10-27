@@ -1,0 +1,42 @@
+name: Bug report
+description: Something does not work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! The more precise, the faster it can be fixed.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Release tag, commit or "latest main".
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: Operating system, browser, board or hardware — whatever applies.
+      placeholder: e.g. Fedora 44 / Firefox 140, Raspberry Pi 4, ESP32-S3
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots, diagnostics
+      description: Paste log output or drag files here.
